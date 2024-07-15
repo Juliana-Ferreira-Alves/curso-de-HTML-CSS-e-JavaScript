@@ -3,11 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Projeto HTML</title>
+	<title>Projeto JS</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<script type="text/javascript">
 
-		var nomeCliente = prompt("Olá, por favor insira o seu nome (Opcional)")
+		let nomeCliente = prompt("Olá, para prosseguir insira o seu nome")
+		let rendaCliente = prompt("Qual a sua atual renda bruta? OBS: Digite o valor sem ponto e sem virgulas")
 
 	</script>
 
@@ -15,31 +16,41 @@
 <body>
 
 	<header>
-		<h1>HTML, CSS e JavaScript</h1>
+		<h1>Análise de Crédito</h1>
 		<h3>Curso de HTML, CSS e JavaScript</h3>
-		
+		<br>
+
 	</header>
 	<br><br><br><br><br><br><br><br>
 	<section>
 		
+		<h2>O resultado da análise de crédito é:</h2>
+		<br>
+		<br>
 		<script type="text/javascript">
-			document.write("Olá Sr(a) ",nomeCliente," seja bem vindo(a) ao nosso site.")
+			
+			document.write("Olá St(a)",nomeCliente)
 
 		</script>
+		<br>
+		<script type="text/javascript">
 
-		<h2>Tudo o que você precisa para ser um programador front-end</h2>
-		<br>
-		<p>O desenvolvimento web se divide em duas partes: back-end e front-end. A primeira está mais voltada para as linguagens de programação e códigos, enquanto a segunda se preocupa mais com a interface exibida para o usuário e este é o famoso programador front-end.</p>
-		<br>
-		<p>Vamos apresentar aqui alguns conceitos, conhecimentos necessários e sugestões de como se capacitar para ser um programador front-end.</p>
-		<br>
-		<p>Aproveite as dicas e comece logo a se especializar!</p>
-		<br>
+			if (rendaCliente >= 2000) {
+				document.write("Parabéns, o seu crédito foi aprovado, ")
+				document.write("um(a) dos nossos consultores(as) entrará em contato em breve.")
+			}else{
+				document.write("Infelizmente o seu crédito não foi aprovado.")
+			}		
+
+		</script>
+		<br><br>
+		<a href="index.html">Clique para Voltar ao Início</a>
 				
 	</section>
 	<br><br>
-
 	<br><br>
+
+	<!--
 	<section>	
 		<h2>Primeiros passos para ser um programador front-end</h2>
 		<br>
@@ -55,8 +66,8 @@
 		<br>
 	</section>
 	<br><br>
-
 	<br><br>
+
 	<section>
 		<h2>O que um programador front-end precisa saber?</h2>
 		<br>
@@ -76,8 +87,7 @@
 		</ul>
 				
 	</section>
-	<br><br>
-
+	<br><br>-->
 
 	<footer>
 		<h5>TREINAMENTO DE HTML, CSS E JAVASCRIPT</h5>
